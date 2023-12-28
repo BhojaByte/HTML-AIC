@@ -3,19 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bhoja Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        button {
+            margin: 10px 0;
+            padding: 8px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        input:focus,
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
-    <center><br><br><br><br><br>
-        <h1>"Ahmed form"</h1>
     <form action="https://formsubmit.co/ahmedbhoja100@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="enter your name" required> <br>
+        <h1>Bhoja Form</h1>
+        <input type="text" name="name" placeholder="Enter your name" required><br>
         <input type="email" name="email" placeholder="Enter your email" required><br>
         <input type="password" name="password" placeholder="Enter the password"><br>
         <button type="submit">Send</button>
-   </form>
-</center>
-
-
+    </form>
 </body>
 </html>

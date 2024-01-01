@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Table</title>
+  <style>
+    /* Apply flex display to the container to arrange tables in rows */
+    #tables-container {
+      display: flex;
+      flex-direction: column; /* Arrange tables in a column */
+    }
+    .row {
+      display: flex;
+    }
+    table {
+      border-collapse: collapse;
+      margin-bottom: 10px; /* Add spacing between rows */
+      margin-right: 10px; /* Add spacing between tables */
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Using a container div to hold all the tables -->
+<div id="tables-container">
+  <!-- First row: Multiplication tables from 1 to 10 -->
+  <div class="row">
+    <!-- Using loops to generate tables for multiplication 1 to 10 -->
+    <script>
+      for (let i = 1; i <= 10; i++) {
+        document.write("<table>");
+        document.write("<tr><th colspan='2'>" + i + " number</th></tr>");
+        for (let j = 1; j <= 10; j++) {
+          const result = i * j;
+          document.write("<tr><td>" + i + " x " + j + "</td><td>" + result + "</td></tr>");
+        }
+        document.write("</table>");
+      }
+    </script>
+  </div>
+  
+  <!-- Second row: Multiplication tables from 11 to 20 -->
+  <div class="row">
+    <!-- Using loops to generate tables for multiplication 11 to 20 -->
+    <script>
+      for (let i = 11; i <= 20; i++) {
+        document.write("<table>");
+        document.write("<tr><th colspan='2'>" + i + " number</th></tr>");
+        for (let j = 1; j <= 10; j++) {
+          const result = i * j;
+          document.write("<tr><td>" + i + " x " + j + "</td><td>" + result + "</td></tr>");
+        }
+        document.write("</table>");
+      }
+    </script>
+  </div>
+</div>
+
+</body>
+</html>
